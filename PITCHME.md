@@ -87,3 +87,9 @@ The stock can be provided in the following formats (so far):
 * CSV (most commonly used)
 * JSON
 * XML
+
+---
+
+@title[thats-it]
+
+![Models](assets/thatsall.jpg)
