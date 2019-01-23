@@ -45,11 +45,11 @@ There are a few ways to get the stock:
   * TradeByte, which an API that some brands use.
   * FTP
 
-  ---
+---
 
-  @title[lambda]
+@title[lambda]
 
-  ### Lambda functions (stockLoader repo)
+### Lambda functions (stockLoader repo)
 
 We use a lambda function for each brand, The function is in charge of getting the stock by using one of the methods (http, ftp, etc..), the lambda function also creates the file in S3 and hit the private endpoint. So the steps are;
 
@@ -58,17 +58,17 @@ We use a lambda function for each brand, The function is in charge of getting th
 * Create a standard file in S3.
 * Hit private stock endpoint.
 
-  ---
+---
 
-  @title[ftp]
+@title[ftp]
 
-  ### Ftp
+### Ftp
 
-  * Most brands use this method.
-  * Some brands upload a file into our FTP.
-  * Some brands have their own FTP.
-  * We also support SFTP
-  * The stock can be provided in the following formats (so far):
-    * CSV (most commonly used)
-    * JSON
-    * XML
+* Most brands use this method.
+* Some brands upload a file into our FTP.
+* Some brands have their own FTP.
+* We also support SFTP
+* The stock can be provided in the following formats (so far):
+* CSV (most commonly used)
+* JSON
+* XML
