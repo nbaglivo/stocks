@@ -51,7 +51,14 @@ There are a few ways to get the stock:
 
 ### Lambda functions (stockLoader repo)
 
-We use a lambda function for each brand, The function is in charge of getting the stock by using one of the methods (http, ftp, etc..), the lambda function also creates the file in S3 and hit the private endpoint. So the steps are;
+* One lambda function per brand.
+* In charge of getting the stock information.
+* Implement one method of getting stock (http, ftp, ...)
+---
+
+@title[lambda-steps]
+
+### Lambda functions - steps
 
 * Getting the stock.
 * Parse it.
@@ -68,7 +75,15 @@ We use a lambda function for each brand, The function is in charge of getting th
 * Some brands upload a file into our FTP.
 * Some brands have their own FTP.
 * We also support SFTP
-* The stock can be provided in the following formats (so far):
+
+---
+
+@title[formats]
+
+### Stock formats
+
+The stock can be provided in the following formats (so far):
+
 * CSV (most commonly used)
 * JSON
 * XML
